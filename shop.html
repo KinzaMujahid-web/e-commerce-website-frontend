@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amista</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./homepage.html">
+                <h1>Amista</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./products-pages/electronics.html">Electronics</a></li>
+                            <li><a class="dropdown-item" href="./products-pages/clothes.html">Clothes</a></li>
+                            <li><a class="dropdown-item" href="./products-pages/home.html">Home</a></li>
+                            <li><a class="dropdown-item" href="./products-pages/accessories.html"> Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./admin.html">Admin</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="nav-icons">
+                    <a href="./auth/login.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <a href="./cart.html">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main class="main-shop ">
+
+        <aside class="shop-sidebar ">
+            <div class="side-head">
+                <i class="fa-solid fa-filter"></i>
+                <h3>Filter</h3>
+            </div>
+
+            <div class="side-check">
+                <div>
+                    <input type="checkbox" name="Accessories" id="">
+                    <label for="Accessories">Accessories</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="Home" id="">
+                    <label for="Home">Home</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="Fashion" id="">
+                    <label for="Fashion">Fashion</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="Electronics" id="">
+                    <label for="Electronics">Electronics</label>
+                </div>
+            </div>
+
+            <div class="side-pricing">
+                <h3>Price Range</h3>
+                <input type="range">
+            </div>
+
+        </aside>
+
+        <section class="main-fproducts">
+            <div class="heading-catogaries">
+                <h2>Showing Results</h2>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="background-color: #000080;">
+                        Featured
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Newest</a></li>
+                        <li><a class="dropdown-item" href="#">Pricing</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fproducts">
+
+                <div class="products-card">
+                    <img src="./assets/acces1.jpg" alt="">
+                    <div class="card-body">
+                        <h6 class="category">Accessories</h6>
+                        <h2 class="name">Female Ring</h2>
+                        <h3 class="price">PKR 200/-</h3>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="products-card">
+                    <img src="../assets/fashion4.jpg" alt="">
+                    <div class="card-body">
+                        <h6 class="category">Fashion</h6>
+                        <h2 class="name">Men Shirt</h2>
+                        <h3 class="price">PKR 8,500/-</h3>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="products-card">
+                    <img src="../assets/fashion7.jpg" alt="">
+                    <div class="card-body">
+                        <h6 class="category">Fashion</h6>
+                        <h2 class="name">Men Jacket</h2>
+                        <h3 class="price">PKR 15,000/-</h3>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="products-card">
+                    <img src="../assets/acces4.jpg" alt="">
+                    <div class="card-body">
+                        <h6 class="category">Accessories</h6>
+                        <h2 class="name">Men Glasses</h2>
+                        <h3 class="price">PKR 2000/-</h3>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="products-card">
+                    <img src="../assets/acces5.jpg" alt="">
+                    <div class="card-body">
+                        <h6 class="category">Accessories</h6>
+                        <h2 class="name">Women Watch</h2>
+                        <h3 class="price">PKR 2500/-</h3>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="products-card">
+                    <img src="../assets/fashion5.jpg" alt="">
+                    <div class="card-body">
+                        <h6 class="category">Fashion</h6>
+                        <h2 class="name">Scarf</h2>
+                        <h3 class="price">PKR 2,000/-</h3>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="products-card">
+                    <img src="./assets/elect1.jpg" alt="">
+                    <div class="card-body">
+                        <h6 class="category">Electronics</h6>
+                        <h2 class="name">White Headphone</h2>
+                        <h3 class="price">PKR 12,000/-</h3>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="products-card">
+                    <img src="./assets/fashion2.jpg" alt="">
+                    <div class="card-body">
+                        <h6 class="category">Fashion</h6>
+                        <h2 class="name">Cargo Pants</h2>
+                        <h3 class="price">PKR 3,500/-</h3>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="products-card">
+                    <img src="./assets/home1.jpg" alt="">
+                    <div class="card-body">
+                        <h6 class="category">Home</h6>
+                        <h2 class="name">Book Shelf</h2>
+                        <h3 class="price">PKR 2,500/-</h3>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="products-card">
+                    <img src="../assets/elect4.jpg" alt="">
+                    <div class="card-body">
+                        <h6 class="category">Electronics</h6>
+                        <h2 class="name">Digital Clock</h2>
+                        <h3 class="price">PKR 7,000/-</h3>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="products-card">
+                    <img src="../assets/elect5.jpg" alt="">
+                    <div class="card-body">
+                        <h6 class="category">Electronics</h6>
+                        <h2 class="name">Smart Phone</h2>
+                        <h3 class="price">PKR 92,000/-</h3>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+
+                <div class="col-md-3">
+                    <a href="./homepage.html" class="footer-brand">Amista</a>
+                    <p class="footer-text">
+                        Leading destination for premium products. Delivering quality and value to your doorstep since
+                        2024.
+                    </p>
+                </div>
+
+                <div class=" footer-link col-md-3">
+                    <h6>Shop</h6>
+                    <a href="#">All Products</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Special Offers</a>
+                </div>
+
+                <!-- Support -->
+                <div class="footer-link col-md-3">
+                    <h6>Support</h6>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Shipping Info</a>
+                    <a href="#">Returns & Exchanges</a>
+                    <a href="#">FAQs</a>
+                </div>
+
+                <div class="footer-link col-md-3">
+                    <h6>Newsletter</h6>
+                    <p class="footer-text">Subscribe to get special offers and once-in-a-lifetime deals.</p>
+
+                    <div class="d-flex gap-2">
+                        <input type="email" id="email" class="newsletter-input" placeholder="Email">
+                        <button class="btn btn-primary">Join</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                © 2026 Amista . All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

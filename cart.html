@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amista</title>
+
+
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./homepage.html">
+                <h1>Amista</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./products-pages/electronics.html">Electronics</a></li>
+                            <li><a class="dropdown-item" href="./products-pages/clothes.html">Clothes</a></li>
+                            <li><a class="dropdown-item" href="./products-pages/home.html">Home</a></li>
+                            <li><a class="dropdown-item" href="./products-pages/accessories.html"> Accessories</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="./admin.html">Admin</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="nav-icons">
+                    <a href="./auth/login.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <a href="./cart.html">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+     <section id="main_cart">
+        <h1 class="cart_heading">Amista Cart</h1>
+
+        <table class="cart_table">
+
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Details</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td class="cart_img">
+                        <img src="./assets/acces5.jpg" alt="">
+                    </td>
+                    <td class="detail">
+                        <h3 style="font-size: 20px;">Women Watch</h3>
+                        <a href="">Remove</a>
+                    </td>
+                    <td>
+                        <h3>PKR 2000/-</h3>
+                    </td>
+                    <td>
+                        <input type="number" min="1" max="100" step="1" value="1">
+                    </td>
+                    <td>
+                        <h3>PKR 2000/-</h3>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="cart_img">
+                        <img src="./assets/elect4.jpg" alt="" >
+                    </td>
+                    <td class="detail">
+                        <h3 style="font-size: 20px;">Digital Clock</h3>
+                        <a href="">Remove</a>
+                    </td>
+                    <td>
+                        <h3>PKR 3550/-</h3>
+                    </td>
+                    <td><input type="number" min="1" max="100" step="1" value="1"></td>
+                    <td>
+                        <h3>PKR 3550/-</h3>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <section id="cart_total">
+            <div>
+
+                <div class="total_checkbox">
+                    <input type="checkbox" name="checkbox">
+                    <label for="checkbox">For <b>PKR 250/-</b> please wrap the product</label>
+                </div>
+                <hr>
+
+                <div class="total_amount">
+                    <h4>Subtotal</h4>
+                    <h4>PKR 5550/-</h4>
+                </div>
+
+                <div class="total_checkout">
+                    <button type="button" class="btn btn-primary btn-sm">Checkout</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+
+                <div class="col-md-3">
+                    <a href="./homepage.html" class="footer-brand">Amista</a>
+                    <p class="footer-text">
+                        Leading destination for premium products. Delivering quality and value to your doorstep since
+                        2024.
+                    </p>
+                </div>
+
+                <div class=" footer-link col-md-3">
+                    <h6>Shop</h6>
+                    <a href="#">All Products</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Special Offers</a>
+                </div>
+
+                <!-- Support -->
+                <div class="footer-link col-md-3">
+                    <h6>Support</h6>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Shipping Info</a>
+                    <a href="#">Returns & Exchanges</a>
+                    <a href="#">FAQs</a>
+                </div>
+
+                <div class="footer-link col-md-3">
+                    <h6>Newsletter</h6>
+                    <p class="footer-text">Subscribe to get special offers and once-in-a-lifetime deals.</p>
+
+                    <div class="d-flex gap-2">
+                        <input type="email" id="email" class="newsletter-input" placeholder="Email">
+                        <button class="btn btn-primary">Join</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                © 2026 Amista . All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
